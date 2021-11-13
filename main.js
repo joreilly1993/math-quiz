@@ -1,3 +1,48 @@
+let studentGrade = 0;
+let titleAndGrade = document.getElementById('title-and-grade');
+let gradeDiv = document.createElement('div');
+gradeDiv.classList.add('grade-styling');
+let percentageScore = document.createElement('div');
+percentageScore.classList.add('grade-styling');
+
+function percentage() {
+    gradeDiv.appendChild(percentageScore);
+    if (studentGrade === 0) {
+        percentageScore.textContent = '0%';
+    }
+    else if (studentGrade === 1) {
+        percentageScore.textContent = '10%';
+    }
+    else if (studentGrade === 2) {
+        percentageScore.textContent = '20%';
+    }
+    else if (studentGrade === 3) {
+        percentageScore.textContent = '30%';
+    }
+    else if (studentGrade === 4) {
+        percentageScore.textContent = '40%';
+    }
+    else if (studentGrade === 5) {
+        percentageScore.textContent = '50%';
+    }
+    else if (studentGrade === 6) {
+        percentageScore.textContent = '60%';
+    }
+    else if (studentGrade === 7) {
+        percentageScore.textContent = '70%';
+    }
+    else if (studentGrade === 8) {
+        percentageScore.textContent = '80%';
+    }
+    else if (studentGrade === 9) {
+        percentageScore.textContent = '90%';
+    }
+    else if (studentGrade === 10) {
+        percentageScore.textContent = '100%';
+    }
+}
+
+
 let firstSixSubmit = document.getElementById('first-six-btn');
 let firstBtnDiv = document.getElementById('six-first')
 let secondSixSubmit = document.getElementById('second-six-btn');
@@ -35,6 +80,11 @@ firstSixSubmit.addEventListener('click', (e) => {
         firstBtnDiv.appendChild(successImg);
         firstSixSubmit.disabled = true;
         document.getElementById('first-six-input').disabled = true;
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        
     } else {
         firstSixSubmit.style = "color: white; background-color: red";
         firstSixSubmit.value = "Incorrect!";
@@ -45,6 +95,7 @@ firstSixSubmit.addEventListener('click', (e) => {
         firstBtnDiv.appendChild(incorrectImg);
         document.getElementById('first-six-input').disabled = true;
         firstSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -61,6 +112,10 @@ secondSixSubmit.addEventListener('click', (e) => {
         secondBtnDiv.appendChild(successImg);
         secondSixSubmit.disabled = true;
         document.getElementById('second-six-input').disabled = true;
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
     } else {
         secondSixSubmit.style = "color: white; background-color: red";
         secondSixSubmit.value = "Incorrect!";
@@ -71,6 +126,7 @@ secondSixSubmit.addEventListener('click', (e) => {
         secondBtnDiv.appendChild(incorrectImg);
         document.getElementById('second-six-input').disabled = true;
         secondSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -87,6 +143,10 @@ thirdSixSubmit.addEventListener('click', (e) => {
         thirdBtnDiv.appendChild(successImg);
         thirdSixSubmit.disabled = true;
         document.getElementById('third-six-input').disabled = true;
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
     } else {
         thirdSixSubmit.style = "color: white; background-color: red";
         thirdSixSubmit.value = "Incorrect!";
@@ -97,6 +157,7 @@ thirdSixSubmit.addEventListener('click', (e) => {
         thirdBtnDiv.appendChild(incorrectImg);
         document.getElementById('third-six-input').disabled = true;
         thirdSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -114,7 +175,12 @@ fourthSixSubmit.addEventListener('click', (e) => {
         fourthBtnDiv.appendChild(successImg);
         fourthSixSubmit.disabled = true;
         document.getElementById('fourth-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         fourthSixSubmit.style = "color: white; background-color: red";
         fourthSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -124,6 +190,7 @@ fourthSixSubmit.addEventListener('click', (e) => {
         fourthBtnDiv.appendChild(incorrectImg);
         document.getElementById('fourth-six-input').disabled = true;
         fourthSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -141,7 +208,12 @@ fifthSixSubmit.addEventListener('click', (e) => {
         fifthBtnDiv.appendChild(successImg);
         fifthSixSubmit.disabled = true;
         document.getElementById('fifth-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         fifthSixSubmit.style = "color: white; background-color: red";
         fifthSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -151,6 +223,7 @@ fifthSixSubmit.addEventListener('click', (e) => {
         fifthBtnDiv.appendChild(incorrectImg);
         document.getElementById('fifth-six-input').disabled = true;
         fifthSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -168,7 +241,12 @@ sixthSixSubmit.addEventListener('click', (e) => {
         sixthBtnDiv.appendChild(successImg);
         sixthSixSubmit.disabled = true;
         document.getElementById('sixth-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         sixthSixSubmit.style = "color: white; background-color: red";
         sixthSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -178,6 +256,7 @@ sixthSixSubmit.addEventListener('click', (e) => {
         sixthBtnDiv.appendChild(incorrectImg);
         document.getElementById('sixth-six-input').disabled = true;
         sixthSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -195,7 +274,12 @@ seventhSixSubmit.addEventListener('click', (e) => {
         seventhBtnDiv.appendChild(successImg);
         seventhSixSubmit.disabled = true;
         document.getElementById('seventh-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         seventhSixSubmit.style = "color: white; background-color: red";
         seventhSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -205,6 +289,7 @@ seventhSixSubmit.addEventListener('click', (e) => {
         seventhBtnDiv.appendChild(incorrectImg);
         document.getElementById('seventh-six-input').disabled = true;
         seventhSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -222,7 +307,12 @@ eighthSixSubmit.addEventListener('click', (e) => {
         eighthBtnDiv.appendChild(successImg);
         eighthSixSubmit.disabled = true;
         document.getElementById('eighth-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         eighthSixSubmit.style = "color: white; background-color: red";
         eighthSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -232,6 +322,7 @@ eighthSixSubmit.addEventListener('click', (e) => {
         eighthBtnDiv.appendChild(incorrectImg);
         document.getElementById('eighth-six-input').disabled = true;
         eighthSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -249,7 +340,12 @@ ninthSixSubmit.addEventListener('click', (e) => {
         ninthBtnDiv.appendChild(successImg);
         ninthSixSubmit.disabled = true;
         document.getElementById('ninth-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         ninthSixSubmit.style = "color: white; background-color: red";
         ninthSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -259,6 +355,7 @@ ninthSixSubmit.addEventListener('click', (e) => {
         ninthBtnDiv.appendChild(incorrectImg);
         document.getElementById('ninth-six-input').disabled = true;
         ninthSixSubmit.disabled = true;
+        percentage();
     }
 });
 
@@ -276,7 +373,12 @@ tenthSixSubmit.addEventListener('click', (e) => {
         tenthBtnDiv.appendChild(successImg);
         tenthSixSubmit.disabled = true;
         document.getElementById('tenth-six-input').disabled = true;
-        } else {
+        studentGrade = studentGrade + 1;
+        gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
+        titleAndGrade.appendChild(gradeDiv);
+        percentage();
+        } 
+        else {
         tenthSixSubmit.style = "color: white; background-color: red";
         tenthSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -286,6 +388,8 @@ tenthSixSubmit.addEventListener('click', (e) => {
         tenthBtnDiv.appendChild(incorrectImg);
         document.getElementById('tenth-six-input').disabled = true;
         tenthSixSubmit.disabled = true;
+        percentage();
     }
 });
+
 
