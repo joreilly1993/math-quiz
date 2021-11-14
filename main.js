@@ -85,7 +85,10 @@ firstSixSubmit.addEventListener('click', (e) => {
         titleAndGrade.appendChild(gradeDiv);
         percentage();
         
-    } else {
+    } 
+    else if (firstSixInput.length === 0) {
+    }
+    else {
         firstSixSubmit.style = "color: white; background-color: red";
         firstSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -116,7 +119,10 @@ secondSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-    } else {
+    } 
+    else if (secondSixInput.length === 0) {
+    }
+    else {
         secondSixSubmit.style = "color: white; background-color: red";
         secondSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -147,7 +153,10 @@ thirdSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-    } else {
+    } 
+    else if (thirdSixInput.length === 0) {
+    }
+    else {
         thirdSixSubmit.style = "color: white; background-color: red";
         thirdSixSubmit.value = "Incorrect!";
         let incorrectImg = document.createElement('img');
@@ -179,7 +188,9 @@ fourthSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (fourthSixInput.length === 0) {
+        }
         else {
         fourthSixSubmit.style = "color: white; background-color: red";
         fourthSixSubmit.value = "Incorrect!";
@@ -212,7 +223,9 @@ fifthSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (fifthSixInput.length === 0) {
+        }
         else {
         fifthSixSubmit.style = "color: white; background-color: red";
         fifthSixSubmit.value = "Incorrect!";
@@ -245,7 +258,9 @@ sixthSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (sixthSixInput.length === 0) {
+        }
         else {
         sixthSixSubmit.style = "color: white; background-color: red";
         sixthSixSubmit.value = "Incorrect!";
@@ -278,7 +293,9 @@ seventhSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (seventhSixInput.length === 0) {
+        }
         else {
         seventhSixSubmit.style = "color: white; background-color: red";
         seventhSixSubmit.value = "Incorrect!";
@@ -311,7 +328,9 @@ eighthSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (eighthSixInput.length === 0) {
+        }
         else {
         eighthSixSubmit.style = "color: white; background-color: red";
         eighthSixSubmit.value = "Incorrect!";
@@ -344,7 +363,9 @@ ninthSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (ninthSixInput.length === 0) {
+        }
         else {
         ninthSixSubmit.style = "color: white; background-color: red";
         ninthSixSubmit.value = "Incorrect!";
@@ -377,7 +398,9 @@ tenthSixSubmit.addEventListener('click', (e) => {
         gradeDiv.textContent = 'Grade: ' + studentGrade + '/10';
         titleAndGrade.appendChild(gradeDiv);
         percentage();
-        } 
+        }
+        else if (tenthSixInput.length === 0) {
+        }
         else {
         tenthSixSubmit.style = "color: white; background-color: red";
         tenthSixSubmit.value = "Incorrect!";
