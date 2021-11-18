@@ -1,30 +1,57 @@
 #container {
     display: flex;
-    width: 500px;
     flex-direction: column;
     align-items: center;
+    
 }
-#six-first, #six-second, #six-third, #six-fourth, #six-fifth, #six-sixth, #six-seventh, #six-eighth, #six-ninth, #six-tenth {
+
+#quiz-questions {
     display: flex;
-    width: 500px;
-    border: 1px solid grey;
-    align-items: center;
-    justify-content: center;
 }
-.font {
+.try-again-btn {
+    width: 140px;
+    height: 35px;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 8%;
+    background-color: rgb(0,71,171);
+    color: white;
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.problem-styling {
     font-family: "Comic Sans MS", Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 0 5px 5px;
+    border: 2px solid grey;
+    width: 290px;
 }
 .grade-styling {
     display: flex;
     font-family: "Comic Sans MS", Tahoma, sans-serif;
     font-weight: 800;
-    margin: 0 0 10px 20px;
+    margin: 0 40px 0 20px;
+    justify-content: center;
 }
-.title-and-grade {
-    flex: 1;
+.input-styling {
+    font-family: "Comic Sans MS", Tahoma, sans-serif;
 }
-.first-six-btn, .second-six-btn, .third-six-btn, .fourth-six-btn, .fifth-six-btn, .sixth-six-btn, .seventh-six-btn, .eighth-six-btn, .ninth-six-btn, .tenth-six-btn {
-    margin: 0 5px 0 50px;
+#title-and-grade-div {
+    margin-bottom: 10px;
+}
+.success-img {
+    width: 25px;
+    height: 25px;
+}
+.incorrect-img {
+    width: 35px;
+    height: 35px;
+}
+.check-answer-btn {
+    margin: 0 10px 0 30px;
     height: 35px;
     box-shadow: 3px 3px 3px black;
     border-radius: 8%;
