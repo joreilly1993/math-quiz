@@ -9,9 +9,10 @@ gradeDiv.classList.add('grade-styling');
 let quizQuestions = document.querySelector('#quiz-questions');
 
 let sixTimesDiv = document.createElement('div');
-sixTimesDiv.classList.add('border');
+sixTimesDiv.classList.add('size');
 
 let timesSixDiv = document.createElement('div');
+timesSixDiv.classList.add('size')
 
 quizQuestions.appendChild(sixTimesDiv);
 quizQuestions.appendChild(timesSixDiv);
